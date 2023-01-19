@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+@import "reset.css";
+@import "landing-page/header.css";
+@import "landing-page/services.css";
+@import "landing-page/illustrations.css";
+@import "landing-page/testimonials.css";
+@import "landing-page/articles.css";
+@import "landing-page/footer.css";
+
+:root {
+  --paragraph-text: #7d7987;
+  --blue-button: #458ff6;
+  --blue-gradient-bg: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h2 {
+  font-size: 1.77rem;
+  line-height: 3.11rem;
+}
+
+p {
+  line-height: 1.67rem;
+  color: var(--paragraph-text);
+  font-weight: 300;
+}
+
+.header-divider {
+  content: "";
+  height: 2px;
+  width: 56px;
+  background: black;
+  margin: 26px auto;
+}
+
+.content-button {
+  width: 200px;
+  height: 56px;
+  padding: 0;
+  border-radius: 55px;
+  outline: none;
+  border: 1.4px solid var(--blue-button);
+  background: white;
+  font-family: inherit;
+  color: var(--blue-button);
+  font-weight: 700;
+  font-size: inherit;
+  cursor: pointer;
+}
+.content-button:hover {
+  background: var(--blue-button);
+  border: none;
+  color: white;
+  transition: ease-out 0.3s;
+}
+.content-button:hover img {
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1381px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+/* LAPTOPS */
+@media only screen and (max-width: 1215px) {
+}
+/* TABLETS */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE DEVICES */
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 1rem;
+  }
+}

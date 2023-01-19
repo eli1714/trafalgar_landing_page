@@ -1,0 +1,108 @@
+.articles {
+  padding-bottom: 202px;
+  position: relative;
+  /* overflow: hidden; */
+}
+.articles .container h2 {
+  text-align: center;
+}
+.articles .container .header-divider {
+  margin-bottom: 72px;
+}
+.articles .container .articles__grid-container {
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+}
+.articles .container .articles__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 36px;
+}
+.articles .container .articles__grid-item {
+  max-width: 350px;
+  max-height: 512px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  background: white;
+}
+.articles .container .articles__grid-item img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.articles .container .articles__grid-item-content {
+  padding: 21px 51px 25px 33px;
+}
+.articles .container .articles__grid-item-content h4 {
+  font-size: 1.16rem;
+  font-weight: 700;
+  line-height: 1.77rem;
+  margin-bottom: 12px;
+}
+.articles .container .articles__grid-item-content p {
+  font-size: 0.88rem;
+  margin-bottom: 25px;
+}
+.articles .container .articles__grid-item-content a {
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #4089ed;
+  margin-bottom: 35px;
+}
+.articles .container .articles__grid-item-content a img {
+  padding-left: 8px;
+}
+.articles .articles__bg-element {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.articles .container .articles__bg-element2 {
+  position: absolute;
+  left: 0;
+  top: 13.94%;
+  z-index: -1;
+}
+.articles .container .content-button {
+  display: block;
+  margin: 0 auto;
+}
+.articles .articles__bg-element3 {
+  position: absolute;
+  right: 3%;
+  bottom: -4%;
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1381px) {
+}
+/* LAPTOPS */
+@media only screen and (max-width: 1215px) {
+  .articles .container .articles__grid-item {
+    max-width: 297px;
+  }
+  .articles .container .articles__grid-item .articles__grid-image {
+    width: 100%;
+  }
+  .articles .container .articles__bg-element2 {
+    left: 5%;
+  }
+}
+/* TABLETS */
+@media only screen and (max-width: 1023px) {
+  .articles .container .articles__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+/* MOBILE DEVICES */
+@media only screen and (max-width: 767px) {
+  .articles .container .articles__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .articles .articles__bg-element3 {
+    bottom: -2%;
+  }
+}

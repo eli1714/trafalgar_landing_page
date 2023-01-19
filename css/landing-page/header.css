@@ -1,0 +1,126 @@
+.header {
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 56px;
+}
+.header__nav-items {
+  display: flex;
+}
+.header__nav-item {
+  margin-right: 40px;
+}
+.header__nav-item a {
+  text-decoration: none;
+  color: #1f1534;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.header__nav-item a:hover {
+  color: #1f1534;
+  opacity: 1;
+  transition: ease-in-out 0.4s;
+}
+.header__nav-item .nav__item-bold {
+  font-weight: 700;
+  opacity: 1;
+}
+.header__nav-mobile-button {
+  display: none;
+}
+.container.hero__content {
+  padding-bottom: 196px;
+}
+
+.hero {
+  position: relative;
+}
+.hero__content {
+  display: flex;
+  align-items: center;
+  padding-top: 84px;
+  justify-content: space-between;
+}
+.hero__content-left {
+  flex-basis: 435px;
+}
+.hero__content-left h1 {
+  font-size: 3rem;
+  line-height: 3.11rem;
+}
+.hero__content-left p {
+  font-size: 1.16rem;
+  font-weight: 300;
+  line-height: 1.77rem;
+  padding: 25px 0 45px;
+}
+.hero__content-button {
+  width: 200px;
+  height: 56px;
+  padding: 0;
+  border-radius: 55px;
+  outline: none;
+  border: none;
+  background: var(--blue-button);
+  font-family: inherit;
+  color: white;
+  font-weight: 700;
+  font-size: inherit;
+  cursor: pointer;
+}
+.hero__content-button:hover {
+  background: white;
+  color: var(--blue-button);
+  border: 1.4px solid var(--blue-button);
+  transition: ease-out 0.3s;
+}
+.hero__content-element {
+  position: absolute;
+  top: 3%;
+  left: 0;
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1381px) {
+  .header__logo-section {
+    margin-left: 20px;
+  }
+}
+/* LAPTOPS */
+@media only screen and (max-width: 1215px) {
+  .hero__content-right {
+    transform: scale(0.8);
+  }
+}
+/* TABLETS */
+@media only screen and (max-width: 1023px) {
+  .header__nav-items {
+    display: none;
+  }
+  .header__nav-mobile-button {
+    display: unset;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  .header__nav-mobile-button i {
+    font-size: 2rem;
+  }
+  .hero__content {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .hero__content-left {
+    text-align: center;
+  }
+}
+/* MOBILE DEVICES */
+@media only screen and (max-width: 767px) {
+  .hero__content-left h1 {
+    font-size: 2.5rem;
+  }
+  .hero__content-right {
+    transform: scale(0.5);
+  }
+}

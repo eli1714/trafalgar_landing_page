@@ -1,0 +1,106 @@
+.illustration {
+  position: relative;
+}
+.illustration__container1 {
+  display: flex;
+  gap: 137px;
+  position: relative;
+  left: -82px;
+  padding-bottom: 262px;
+}
+.illustration__container1-content {
+  flex-basis: 450px;
+  height: 388px;
+  align-self: center;
+}
+.illustration__header-divider {
+  content: "";
+  height: 2px;
+  width: 56px;
+  background: black;
+  margin: 26px 0;
+}
+.illustration__container1-content p,
+.illustration__container2-content p {
+  margin-bottom: 65px;
+}
+
+.illustration__element {
+  position: absolute;
+  right: 1%;
+  top: -16%;
+}
+
+.illustration__container2 {
+  display: flex;
+  gap: 71px;
+  position: relative;
+  right: -63px;
+}
+.illustration__container2-content {
+  flex-basis: 420px;
+  height: 375px;
+  align-self: center;
+}
+.illustration__container2-content button img {
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1381px) {
+  .illustration__container1 {
+    left: 0;
+  }
+  .illustration__container2 {
+    right: 0;
+  }
+}
+/* LAPTOPS */
+@media only screen and (max-width: 1215px) {
+  .illustration__container1 {
+    gap: 71px;
+  }
+}
+/* TABLETS */
+@media only screen and (max-width: 1023px) {
+  .illustration__container1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  .illustration__container1-content,
+  .illustration__container2-content {
+    text-align: center;
+  }
+  .illustration__header-divider {
+    margin: 26px auto;
+  }
+  .illustration__container2 {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .illustration__container1-image,
+  .illustration__container2-image {
+    transform: scale(0.8);
+  }
+  .illustration__element {
+    position: absolute;
+    top: -9%;
+  }
+}
+/* MOBILE DEVICES */
+@media only screen and (max-width: 767px) {
+  .illustration__container1,
+  .illustration__container2 {
+    gap: unset;
+  }
+  .illustration__container1-image,
+  .illustration__container2-image {
+    transform: scale(0.5);
+  }
+  .illustration__element {
+    position: absolute;
+    top: -3%;
+  }
+}
